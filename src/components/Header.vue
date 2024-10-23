@@ -1,29 +1,55 @@
 <template >
     <nav class="py-5">
-        <div class="container flex items-center ">
-            <div class="w-1/12">
+        <div class="container flex items-center justify-between">
+            <div class="w-1/3 md:w-[16%] lg:w-1/12">
                 <img src="../assets/images/Logo.png" alt="logo">
             </div>
-            <div class="w-10/12 text-center hidden md:block">
-                <ul class="bg-white inline-flex mx-auto p-4 px-2  items-center">
-                    <li><a href="#" class="font-clash font-medium py-3 px-5 bg-main duration-300 ease-linear hover:bg-main text-base text-secondary">Home</a></li>
-                    <li><a href="#" class="font-clash font-medium py-3 px-5 bg-transparent duration-300 ease-linear hover:bg-main text-base text-secondary">Abouts</a></li>
-                    <li><a href="#" class="font-clash font-medium py-3 px-5 bg-transparent duration-300 ease-linear hover:bg-main text-base text-secondary">Works</a></li>
-                    <li><a href="#" class="font-clash font-medium py-3 px-5 bg-transparent duration-300 ease-linear hover:bg-main text-base text-secondary">Blog's</a></li>
-                    <li><a href="#" class="font-clash font-medium py-3 px-5 bg-transparent duration-300 ease-linear hover:bg-main text-base text-secondary">Contact us</a></li>
+            <div  :class="`  w-10/12 text-center ${menu ? 'block':'hidden'} md:block`">
+                <ul class="bg-white md:inline-flex mx-auto m_menu p-4 px-2  items-center">
+                    <li><a href="#" class="font-clash font-medium mb-2 md:mb-0 w-full md:w-auto inline-block py-3 px-3 lg:px-5 bg-main duration-300 ease-linear hover:bg-main md:text-sm lg:text-base text-secondary">Home</a></li>
+                    <li><a href="#" class="font-clash font-medium mb-2 md:mb-0 w-full md:w-auto inline-block py-3 px-3 lg:px-5 bg-transparent duration-300 ease-linear hover:bg-main md:text-sm lg:text-base text-secondary">Abouts</a></li>
+                    <li><a href="#" class="font-clash font-medium mb-2 md:mb-0 w-full md:w-auto inline-block py-3 px-3 lg:px-5 bg-transparent duration-300 ease-linear hover:bg-main md:text-sm lg:text-base text-secondary">Works</a></li>
+                    <li><a href="#" class="font-clash font-medium mb-2 md:mb-0 w-full md:w-auto inline-block py-3 px-3 lg:px-5 bg-transparent duration-300 ease-linear hover:bg-main md:text-sm lg:text-base text-secondary">Blog's</a></li>
+                    <li><a href="#" class="font-clash font-medium mb-2 md:mb-0 w-full md:w-auto inline-block py-3 px-3 lg:px-5 bg-transparent duration-300 ease-linear hover:bg-main md:text-sm lg:text-base text-secondary">Contact us</a></li>
                 </ul>
             </div>
-            <div class="w-1/12">
-                <a href="#" class="font-clash font-medium py-3 px-5 bg-main duration-300 ease-linear text-base text-secondary">Get in touch</a>
+            <div class=" md:w-[18%] lg:w-1/12 text-right">
+                <a href="#" class="font-clash hidden md:block font-medium py-3 px-5 bg-main duration-300 ease-linear text-base text-center md:text-sm lg:text-base text-secondary">Get in touch</a>
+                <button @click="toggleMenu" class="bg-main block md:hidden px-4 py-2 text-2xl text-secondary"> <CgMenuRight/> </button>
             </div>
         </div>
     </nav>
 </template>
 <script>
+import { CgMenuRight } from '@kalimahapps/vue-icons';
 export default {
-    name:"HeaderComponent"
+    name:"HeaderComponent",
+    components:{
+        CgMenuRight
+    },
+    data(){
+        return {
+            menu : false,
+        }
+    },
+    methods:{
+        toggleMenu(){
+            this.menu = !this.menu
+            console.log(this.menu)
+        }
+    }
 }
 </script>
 <style scoped>
-    
+    @media screen and (max-width:768px) {
+        .m_menu{
+            position: absolute;
+            z-index: 999999;
+            width: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+        }
+        /* absolute z-[999999] w-[95%] md:w-[60%] left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 right-0 top-20 md:unset */
+    }
 </style>

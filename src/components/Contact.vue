@@ -7,7 +7,7 @@
                     </div>
             <div class="md:flex">
                 <div class="md:w-1/2">
-                    <div class="contact_form pt-10 md:pt-40">
+                    <div class="contact_form pr-5 pt-10 md:pt-40">
                         <form action="#">
                         <div class="flex gap-5">
                             <div class="group w-1/2 mb-2" :class="{ 'has-value': firstName.trim() !== '' }">
