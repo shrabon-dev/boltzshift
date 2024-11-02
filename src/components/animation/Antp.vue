@@ -1,6 +1,6 @@
 
 <template >
-     <span class="overflow-hidden ">
+      <span class="overflow-hidden leading-[.7] inline-block">
         <span ref="tp" class=" inline-block">
             {{ text }}
         </span>
@@ -19,7 +19,7 @@ export default {
     },
     mounted(){
         gsap.from(this.$refs.tp, {
-            duration: 1,
+            duration: 2,
             y: 200,
             ease: 'power3.out'
             });
