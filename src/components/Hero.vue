@@ -5,7 +5,7 @@
             <div class="bg">
                 <span class="w-20 md:w-96 left-1/2 top-1/2 -translate-y-[60%] -z-0 -translate-x-[25%] h-[700px] md:rotate-45 blur-[120px] bg-main/30 inline-block absolute"> </span>
                 <div class="content py-40 text-center">
-                    <h2 class="flex font-clash font-bold text-xl lg:text-9xl uppercase items-center justify-center gap-5 text-center"> <span class="overflow-hidden"> <AnTl text="W"/><AnTb text="e"/><span class="lg:block lg:text-[106px] lg:-ml-2 lg:-mt-7"> <AnTp :key="a" text="A"/><AnTb :key="r" text="r"/> <AnTp text="e"/> </span></span> <img class="w-32 lg:rotate-90 lg:w-[200px]" src="../assets/images/img.png" alt="img">
+                    <h2 class="flex font-clash font-bold text-xl lg:text-9xl uppercase items-center justify-center gap-5 text-center overflow-hidden md:overflow-auto"> <span class="overflow-hidden"> <AnTl text="W"/><AnTb text="e"/><span class="lg:block lg:text-[106px] lg:-ml-2 lg:-mt-7"> <AnTp :key="a" text="A"/><AnTb :key="r" text="r"/> <AnTp text="e"/> </span></span> <img class="w-32 lg:rotate-90 lg:w-[200px]" src="../assets/images/img.png" alt="img">
                     <AnTp text="C" />
                     <AnTb text="r" />
                     <AnTp text="e" />
