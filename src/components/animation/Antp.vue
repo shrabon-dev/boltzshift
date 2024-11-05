@@ -1,6 +1,6 @@
 
 <template >
-      <span class="md:overflow-hidden leading-[.7] inline-block">
+      <span class="md:overflow-hidden leading-[.8] inline-block">
         <span ref="tp" class=" inline-block">
             {{ text }}
         </span>
@@ -9,7 +9,7 @@
 <script>
 import { gsap } from 'gsap';
 export default {
-    name:"AnTp",
+    name:"ImgScale",
  
     props:{
         text:{

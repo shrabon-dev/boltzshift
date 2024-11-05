@@ -13,9 +13,11 @@
                 </div>
             </div>
         </div>
-        <div class="img w-full py-10">
-            <img class="w-full block" src="../assets/images/img7.png" alt="">
-        </div>
+        <ImgScale>
+            <div class="img w-full py-10">
+                <img class="w-full block" src="../assets/images/img7.png" alt="">
+            </div>
+        </ImgScale> 
         <div class="container">
             <div class="md:flex  ">
                 <div class="md:w-1/2">
@@ -42,10 +44,11 @@
 </template>
 <script>
 import { FlFilledStarCheckmark } from '@kalimahapps/vue-icons';
+import ImgScale from "@/components/animation/ImgScale.vue"
 export default {
     name:"AboutComponent",
     components:{
-        FlFilledStarCheckmark
+        FlFilledStarCheckmark,ImgScale
     }
 }
 </script>
