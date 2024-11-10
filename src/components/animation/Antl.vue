@@ -18,12 +18,20 @@ export default {
         }
     },
     mounted(){
-        gsap.from(this.$refs.tl, {
-            duration: 2,
-            x: -200,
-            ease: 'power3.out'
-            });
- 
+        var observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+                if(entry.isIntersecting){
+                    gsap.from(this.$refs.tl,{
+                        duration: 2,
+                        x: -200,
+                        ease: 'power3.out'
+                    });
+
+                    observer.unobserve(this.$refs.tl)
+                }
+            })
+        },{threshold:.5})
+        observer.observe(this.$refs.tl);
     }
 }
 </script>

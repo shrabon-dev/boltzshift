@@ -1,7 +1,7 @@
 
 <template >
     
-        <div ref="aimgScale" >
+        <div ref="aimgScale" class="scale-0" >
             <slot></slot>
         </div>
    
@@ -15,25 +15,25 @@ export default {
         
     },
     mounted(){
-       // Create an Intersection Observer to watch the element
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Start the animation when the element is in view
           gsap.fromTo(
             this.$refs.aimgScale,
-            { y:-287 }, // Start at a larger scale
-            { duration: 2, scale: 1,y: 0, ease: 'power3.out' } // Animate to normal size
+            { scale:0 }, 
+            { duration: 4, scale: 1,y: 0, ease: 'power3.out' } 
           );
-          observer.unobserve(this.$refs.aimgScale); // Stop observing after animation starts
+          observer.unobserve(this.$refs.aimgScale); 
         }
       });
-    }, { threshold: 0 }); // Trigger when 50% of the element is in view
+    }, { threshold: 0 });  
 
     observer.observe(this.$refs.aimgScale);
     }
 }
 </script>
-<style  scoped>
-    
+<style scoped>
+  .scale-0{
+    transform: scale(0);
+  }
 </style>

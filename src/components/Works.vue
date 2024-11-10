@@ -11,11 +11,17 @@
                     <div class="item">
                        <a href="#">
                             <div class="img overflow-hidden group">
-                                <img class="w-full group-hover:scale-125 duration-300 ease-linear" :src="item.image" alt="work image">
+                                <ImgRevel>
+                                    <img class="w-full group-hover:scale-125 duration-300 ease-linear" :src="item.image" alt="work image">
+                                </ImgRevel>
                             </div>
                             <div class="info py-5">
-                                <h4 class="font-medium font-clash text-white text-lg md:text-3xl">{{ item.title }}</h4>
-                                <h6 class="font-medium font-clash pt-2 text-third text-sm md:text-lg">{{ item.subTitle }}</h6>
+                                <h4 class="font-medium font-clash text-white text-lg md:text-3xl">
+                                    <Antb :text="item.title" />
+                                </h4>
+                                <h6 class="font-medium font-clash pt-2 text-third text-sm md:text-lg">
+                                    <Antl :text="item.subTitle" />
+                                </h6>
                             </div>
                        </a>
                     </div>
@@ -26,8 +32,12 @@
     </section>
 </template>
 <script>
+import ImgRevel from './animation/ImgRevel.vue';
+import Antb from './animation/Antb.vue';
+import Antl from './animation/Antl.vue';
 export default {
     name:"WorksComponent",
+    components:{ImgRevel, Antb, Antl},
     data(){
         return{
          items:[

@@ -50,11 +50,10 @@ import AnTl  from '@/components/animation/Antl.vue'
 import AnTb  from '@/components/animation/Antb.vue'
 import AnTp  from '@/components/animation/Antp.vue'
 import TextFly  from '@/components/animation/TextFly.vue'
-import ImgLeft  from '@/components/animation/ImgLeft.vue'
 export default {
     name:"HeroComponent",
     components:{
-        FlFilledPlayMultiple,FlArrowCircleRight,AnTl,AnTb,AnTp,TextFly,ImgLeft
+        FlFilledPlayMultiple,FlArrowCircleRight,AnTl,AnTb,AnTp,TextFly,
     },
  
     mounted(){
