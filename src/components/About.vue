@@ -12,8 +12,11 @@
                         </span>
                     </div>
                 <div class="md:w-1/2">
-                    <p class="font-clash text-lg md:text-2xl font-medium !leading-normal text-third">Boltzshift is a distinguished design and development agency based in the United Kingdom, known for our commitment to crafting exceptional digital experiences. 
-                     <br><br><br>   Since  2018 Boltzshift has been reshaping the web & mobile apps with top-notch design and the power of no code.</p>
+                    <p class="font-clash text-lg md:text-2xl font-medium !leading-normal text-third">
+                        <TextRevel text="Boltzshift is a distinguished design and development agency based in the United Kingdom, known for our commitment to crafting exceptional digital experiences."/>
+                        <br><br><br> 
+                        <TextRevel text="Since  2018 Boltzshift has been reshaping the web & mobile apps with top-notch design and the power of no code."/>
+                    </p>
                 </div>
             </div>
         </div>
@@ -56,11 +59,12 @@ import ImgScale from "@/components/animation/ImgScale.vue"
 import AnTl  from '@/components/animation/Antl.vue'
 import AnTb  from '@/components/animation/Antb.vue'
 import AnTp  from '@/components/animation/Antp.vue'
-import Antl from '@/components/animation/Antl.vue';
+import TextRevel from './animation/TextRevel.vue';
+
 export default {
     name:"AboutComponent",
     components:{
-        FlFilledStarCheckmark,ImgScale,AnTl,AnTb,AnTp,
+        FlFilledStarCheckmark,ImgScale,AnTl,AnTb,AnTp,TextRevel
     }
 }
 </script>
