@@ -3,8 +3,24 @@
     <section id="works">
         <div class="container py-20">
              <div class="title pb-20">
-                <h3 class="font-clash text-4xl text-white font-bold text-center">SELECTED WORK</h3>
-                <p class="font-clash text-lg pt-3 text-third font-medium text-center">Our exceptional design services</p>
+                <h3 class="font-clash text-4xl text-white font-bold text-center">
+                    <Antb text="S" />
+                    <Antp text="E" />
+                    <Antb text="L" />
+                    <Antp text="E" />
+                    <Antb text="C" />
+                    <Antp text="T" />
+                    <Antb text="E" />
+                    <Antp text="D" />
+                    <span> </span>
+                    <Antb text="W" />
+                    <Antp text="O" />
+                    <Antb text="R" />
+                    <Antp text="K" />
+                </h3>
+                <p class="font-clash text-lg pt-3 text-third font-medium text-center">
+                    <TextFly text="Our exceptional design services" />
+                </p>
              </div>
             <div class="flex flex-wrap justify-between">
                 <div v-for="(item, index) in items" :key="index" class="w-[45%] mb-5">
@@ -35,9 +51,11 @@
 import ImgRevel from './animation/ImgRevel.vue';
 import Antb from './animation/Antb.vue';
 import Antl from './animation/Antl.vue';
+import Antp from './animation/Antp.vue';
+import TextFly from './animation/TextFly.vue';
 export default {
     name:"WorksComponent",
-    components:{ImgRevel, Antb, Antl},
+    components:{ImgRevel, Antb, Antl, Antp, TextFly},
     data(){
         return{
          items:[

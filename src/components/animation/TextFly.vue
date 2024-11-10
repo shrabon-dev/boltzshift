@@ -33,22 +33,31 @@
     },
   
     mounted() {
-      gsap.fromTo(
-        this.$refs.textFly.children,
-        {
-          opacity: 0,
-          x: () => Math.random() * 300 - 150,  
-          y: () => Math.random() * 200 - 100,  
-        },
-        {
-          opacity: 1,
-          duration: 3,
-          x: 0,
-          y: 0,
-          ease: 'power3.out',
-        //  stagger: 0.05,  
-        }
-      );
+      let  observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+            gsap.fromTo(
+              this.$refs.textFly.children,
+              {
+                opacity: 0,
+                x: () => Math.random() * 300 - 150,  
+                y: () => Math.random() * 200 - 100,  
+              },
+              {
+                opacity: 1,
+                duration: 3,
+                x: 0,
+                y: 0,
+                ease: 'power3.out',
+              //  stagger: 0.05,  
+              }
+            );
+            observer.unobserve(this.$refs.textFly)
+          }
+        })
+      })
+      observer.observe( this.$refs.textFly);
+    
     }
   };
   </script>
