@@ -53,41 +53,45 @@ import Antb from './animation/Antb.vue';
 import Antl from './animation/Antl.vue';
 import Antp from './animation/Antp.vue';
 import TextFly from './animation/TextFly.vue';
+import img3 from '@/assets/images/img3.png';
+import img4 from '@/assets/images/img4.png';
+import img5 from '@/assets/images/img5.png';
+import img6 from '@/assets/images/img6.png';
+
 export default {
-    name:"WorksComponent",
-    components:{ImgRevel, Antb, Antl, Antp, TextFly},
-    data(){
-        return{
-         items:[
+    name: "WorksComponent",
+    components: { ImgRevel, Antb, Antl, Antp, TextFly },
+    data() {
+        return {
+            items: [
                 {
                     title: 'Fortknox Chat Application',
                     subTitle: 'Branding & Design',
-                    image: `../../assets/images/img3.png`,
+                    image: img3,
                     link: 'link one',
                 },
                 {
                     title: 'Bsoston RealEstate App',
                     subTitle: 'Branding & Ui',
-                    image: 'src/assets/images/img4.png',
+                    image: img4,
                     link: 'link two',
                 },
                 {
                     title: 'Boltzshift - Portfolio',
                     subTitle: 'Branding & Ui',
-                    image: 'src/assets/images/img5.png',
+                    image: img5,
                     link: 'link three',
                 },
                 {
                     title: 'Croma - Agency',
                     subTitle: 'Branding & Ui',
-                    image: 'src/assets/images/img6.png',
+                    image: img6,
                     link: 'link four',
                 },
             ]
-        }
+        };
     }
-}
-
+};
 </script>
 <style>
     
