@@ -62,7 +62,7 @@ export default {
                 {
                     title: 'Fortknox Chat Application',
                     subTitle: 'Branding & Design',
-                    image: `../assets/images/img3.png`,
+                    image: `src/assets/images/proline.png`,
                     link: 'link one',
                 },
                 {
