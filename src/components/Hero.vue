@@ -22,6 +22,7 @@
                     </span>
                     </h2>
                     <h4 class="flex flex-col md:flex-row font-clash font-normal text-xl lg:text-8xl uppercase justify-center items-center gap-5 text-center pt-10">
+                       <span>
                         <AnTl text="A" />
                         <AnTb text="g" />
                         <AnTl text="e" />
@@ -30,6 +31,7 @@
                         <AnTb text="i" />
                         <AnTl text="e" />
                         <AnTp text="s" />
+                       </span>
                         <button class="bg-white rounded-full flex items-center justify-between overflow-hidden w-32 lg:w-auto"><span class="bg-main w-24 flex items-center text-secondary justify-center rounded-full h-14 lg:h-24 text-xl lg:text-7xl"><FlFilledPlayMultiple/></span><img class="w-1/2" src="../assets/images/img2.png" alt=""></button> <span class="text-base lg:text-2xl text-third font-medium max-w-full  md:max-w-72">
                             <AnTp text="Award-winning studio" />
                             <span class="block md:inline-block">

@@ -22,7 +22,7 @@
         </div>
         <div class="container my-5 mt-20 ">
             <ImgScale>
-            <div class="rounded-tr-full h-[740px] rounded-tl-full  overflow-hidden">
+            <div class="rounded-tr-full h-auto md:h-[740px] rounded-tl-full  overflow-hidden">
                     <div class="img w-full">
                         <img class="w-full block" src="../assets/images/img7.png" alt="">
                     </div>
