@@ -1,14 +1,12 @@
 <template>
-    <div class="md:w-[45%] lg:w-[45%] xl:w-[46%] item bg-fourth p-5 group hover:bg-main duration-300 ease-linear">
+    <div class="md:w-[45%] lg:w-[45%] xl:w-[46%] item bg-fourth p-5 group hover:bg-main duration-300 ease-linear opacity-0">
       <div class="icon relative flex justify-between">
         <!-- Dynamic component usage -->
         <span  class="text-7xl duration-300 ease-linear text-white group-hover:text-secondary"> 
             <CoBrandAnalogue/>
         </span>
         <a
-          class="text-4xl opacity-0 group-hover:opacity-100 duration-300 ease-linear text-secondary group-hover:text-secondary"
-          :href="link"
-        >
+          class="text-4xl opacity-0 group-hover:opacity-100 duration-300 ease-linear text-secondary group-hover:text-secondary" :href="link" >
           <AkLinkOut />
         </a>
       </div>
@@ -31,7 +29,7 @@
     },
     props: {
       icon: {
-        type: [Object, Function], // Accept component functions or objects
+        type: [Object, Function],  
         required: true
       },
       linkIcon: {

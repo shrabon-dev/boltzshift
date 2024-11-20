@@ -17,27 +17,34 @@ export default {
   },
 
   mounted() {
+    console.log(this.$refs.cardMoveTop.children[0].children);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            gsap.from(this.$refs.cardMoveTop, {
+            gsap.fromTo(entry.target.children[0].children, {
               duration: 2,
               y: 200,
-              opacity:0,
+              opacity: 0,
+              stagger: 0.3,  
+              ease: "power3.out",
+            },{
+              duration: 2,
+              y: 0,
+              opacity: 1,
+              stagger: 0.3,  
               ease: "power3.out",
             });
-            observer.unobserve(this.$refs.cardMoveTop);
+            observer.unobserve(entry.target);  
           }
         });
       },
       { threshold: 0 }
     );
     observer.observe(this.$refs.cardMoveTop);
-  },
+    },
 };
 </script>
-
 <style scoped>
-/* Add any styles you need here */
+ 
 </style>
