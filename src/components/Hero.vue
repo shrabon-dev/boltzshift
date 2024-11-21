@@ -5,8 +5,8 @@
             <div class="bg">
                 <span class="w-20 md:w-96 left-1/2 top-1/2 -translate-y-[60%] -z-0 -translate-x-[25%] h-[700px] md:rotate-45 blur-[120px] bg-main/30 inline-block absolute"> </span>
                 <div class="content py-40 text-center">
-                    <h2 class="flex flex-col md:flex-row font-clash font-bold text-6xl lg:text-9xl uppercase items-center justify-center gap-5 text-center overflow-hidden md:overflow-auto"><span class="overflow-hidden"><AnTl text="W"/><AnTb text="e"/>
-                    <span class="pl-5 md:pl-0 lg:block lg:text-[106px] lg:-ml-2 lg:-mt-7"> <AnTp :key="a" text="A"/><AnTb :key="r" text="r"/> <AnTp text="e"/> </span></span> 
+                    <h2 class="flex flex-col md:flex-row font-clash font-bold text-6xl xl:text-9xl uppercase items-center justify-center gap-5 text-center overflow-hidden md:overflow-hidden "><span class="overflow-hidden px-2"><AnTl text="W"/><AnTb text="e"/>
+                    <span class="pl-5 md:pl-0 lg:block xl:text-[106px] lg:-ml-2 lg:-mt-7"> <AnTp :key="a" text="A"/><AnTb :key="r" text="r"/> <AnTp text="e"/> </span></span> 
                     <ImgLeft>
                         <img class="w-32 lg:rotate-90 lg:w-[200px]" src="../assets/images/img.png" alt="img">
                     </ImgLeft>
@@ -21,7 +21,7 @@
                         <AnTb text="e" />
                     </span>
                     </h2>
-                    <h4 class="flex flex-col md:flex-row font-clash font-normal text-xl lg:text-8xl uppercase justify-center items-center gap-5 text-center pt-10">
+                    <h4 class="flex flex-col md:flex-row font-clash font-normal text-xl lg:text-4xl xl:text-8xl uppercase justify-center items-center gap-5 text-center pt-10">
                        <span>
                         <AnTl text="A" />
                         <AnTb text="g" />

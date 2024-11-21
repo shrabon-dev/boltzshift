@@ -1,7 +1,7 @@
 
 <template >
       <span class="md:overflow-hidden leading-[.8] inline-block">
-        <span ref="tp" class=" inline-block">
+        <span ref="tp" class=" inline-block  ">
             {{ text }}
         </span>
      </span>
