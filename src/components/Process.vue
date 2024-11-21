@@ -2,7 +2,18 @@
     <section id="process" class="py-20">
         <div class="container">
             <div class="title">
-            <h3 class="font-clash text-4xl text-white font-bold text-center !leading-normal">OUR PROCESS</h3>
+            <h3 class="font-clash text-4xl text-white font-bold text-center !leading-normal">
+                <AnTl text="O"/>
+                <AnTl text="U"/>
+                <AnTl text="R"/>
+                <AnTl text="P"/>
+                <AnTl text="R"/>
+                <AnTl text="O"/>
+                <AnTl text="C"/>
+                <AnTl text="E"/>
+                <AnTl text="S"/>
+                <AnTl text="S"/>
+            </h3>
         </div>
         <AnTpCard>
         <div class="md:flex gap-10 space-y-5 md:space-y-0  pt-20">
@@ -34,10 +45,11 @@
 </template>
 <script>
 import AnTpCard from './animation/AntpCard.vue';
+import AnTl from './animation/Antl.vue';
 export default {
     name:"ProcessComponent",
     components: {
-        AnTpCard,
+        AnTpCard,AnTl
     }
 
     

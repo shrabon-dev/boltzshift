@@ -21,9 +21,13 @@ export default {
         var observer = new IntersectionObserver((entries)=>{
             entries.forEach((entry)=>{
                 if(entry.isIntersecting){
-                    gsap.from(this.$refs.tl,{
+                    gsap.fromTo(this.$refs.tl,{
                         duration: 2,
                         x: -200,
+                        ease: 'power3.out'
+                    },{
+                        duration: 2,
+                        x: 0,
                         ease: 'power3.out'
                     });
 
@@ -36,5 +40,7 @@ export default {
 }
 </script>
 <style  scoped>
-    
+    .tl{
+        transform: translateX(-200px);
+    }
 </style>

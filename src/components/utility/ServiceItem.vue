@@ -1,5 +1,5 @@
 <template>
-    <div class="md:w-[45%] lg:w-[45%] xl:w-[46%] item bg-fourth p-5 group hover:bg-main duration-300 ease-linear opacity-0">
+    <div class="md:w-[45%] lg:w-[45%] xl:w-[46%] item bg-fourth p-5 group hover:bg-main duration-300 ease-linear opacity-0 translate-y-[200px]">
       <div class="icon relative flex justify-between">
         <!-- Dynamic component usage -->
         <span  class="text-7xl duration-300 ease-linear text-white group-hover:text-secondary"> 

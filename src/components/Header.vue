@@ -1,5 +1,5 @@
-<template >
-    <nav class="py-5">
+<template>
+    <nav class="py-5 animate">
         <div class="container flex items-center justify-between">
             <div class="w-1/3 md:w-[16%] lg:w-1/12">
                 <img src="../assets/images/Logo.png" alt="logo">
@@ -22,10 +22,11 @@
 </template>
 <script>
 import { CgMenuRight } from '@kalimahapps/vue-icons';
+import AntpCard from './animation/AntpCard.vue';
 export default {
     name:"HeaderComponent",
     components:{
-        CgMenuRight
+        CgMenuRight,AntpCard
     },
     data(){
         return {
@@ -50,6 +51,19 @@ export default {
             transform: translateX(-50%);
             top: 80px;
         }
-        /* absolute z-[999999] w-[95%] md:w-[60%] left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 right-0 top-20 md:unset */
+    }
+    .animate{
+        animation: navbar .8s forwards linear;
+        position: relative;
+    }
+    @keyframes navbar {
+        0%{
+            top: -100px;
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            top: 20px;
+        }
     }
 </style>
